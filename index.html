@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluckin' Bell - Cadastre-se!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="titulo-container">
+            <img src="/img/Cluckinbelllogo.webp" alt="Logo Cluckin'Bell" class="logo-sino">
+            <h1> CLUCKIN' BELL</h1>
+        </div>
+        <p>O melhor frango de San Andreas!</p>
+    </div>
+
+    <!-- Menu Section -->
+    <div class="menu-section">
+        <div class="container">
+            <h2>🍗 Nosso Menu 🍗</h2>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍔</div>
+                        <div class="menu-item-name">Chicken Burger</div>
+                        <div class="menu-item-price">$2.99</div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍟</div>
+                        <div class="menu-item-name">Cluckin Fritas</div>
+                        <div class="menu-item-price">$1.49</div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🥤</div>
+                        <div class="menu-item-name">Coke Grande</div>
+                        <div class="menu-item-price">$1.99</div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍗🍗</div>
+                        <div class="menu-item-name"> Duplo Chicken Premium</div>
+                        <div class="menu-item-price">$5.99</div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🌯</div>
+                        <div class="menu-item-name">Burrito de Salamandra</div>
+                        <div class="menu-item-price">$3.49</div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍦</div>
+                        <div class="menu-item-name">Sundae Especial</div>
+                        <div class="menu-item-price">$2.49</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-section">
+        <div class="form-wrapper">
+
+            <!-- Imagem Esquerda - Big Smoke -->
+            <div class="side-image">
+                <div class="side-image-title"> Clientes Satisfeitos </div>
+                <img src="/img/Big Smoke.jpg" alt="Big Smoke - Cluckin' Bell">
+            </div>
+            
+            <!-- Formulário Central -->
+            <div class="form-container">
+                <h2>📧 Receba Nossas Ofertas</h2>
+                <p class="text-center">Cadastre-se para receber promoções e cupons de desconto!</p>
+
+                <form id="cadastroForm">
+                    <div class="mb-3">
+                        <label class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="aceito" required>
+                        <label class="form-check-label" for="aceito">
+                            Aceito receber emails promocionais
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-custom">CADASTRAR</button>
+                </form>
+
+                <div id="mensagem" class="success">
+                    ✅ Cadastro realizado! Você receberá nossas promoções em breve!
+                </div>
+            </div>
+            
+            <!-- Imagem Direita - CJ -->
+            <div class="side-image">
+                <div class="side-image-title"> Clientes Satisfeitos </div>
+                <img src="/img/CJ rindo.webp" alt="CJ - San Andreas">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p> Cluckin' Bell - Desde 1992 servindo San Andreas</p>
+    </div>
+
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            
+            console.log('Nome:', nome);
+            console.log('Email:', email);
+            
+            document.getElementById('mensagem').style.display = 'block';
+            document.getElementById('cadastroForm').reset();
+            
+            setTimeout(function() {
+                document.getElementById('mensagem').style.display = 'none';
+            }, 4000);
+        });
+    </script>
+
+</body>
+</html>
