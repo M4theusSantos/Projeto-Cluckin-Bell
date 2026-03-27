@@ -18,3 +18,6 @@ Bootstrap 5.3: Utilizado para Grid System, espaçamentos (mb-3) e componentes de
 
 JavaScript (Vanilla): Lógica para manipulação do DOM e interceptação do formulário.
 
+
+<img width="1838" height="900" alt="image" src="https://github.com/user-attachments/assets/046f02d1-64df-4e23-89f1-468df42b9501" />
+<img width="1828" height="822" alt="image" src="https://github.com/user-attachments/assets/51d96070-8271-4244-a740-52f49cec1022" />
